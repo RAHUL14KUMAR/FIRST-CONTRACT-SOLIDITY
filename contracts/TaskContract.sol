@@ -28,7 +28,7 @@ contract taskContract{
         emit DeleteTask(taskId, isDeleted);
     }
 
-    function getMyTask () view external returns(Task[] memory){
+    function getMyTask() view external returns(Task[] memory){
         Task[] memory tempo=new Task[](tasks.length);
         uint counter=0;
         for(uint i=0;i<tasks.length;i++){
